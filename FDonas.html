@@ -1,0 +1,49 @@
+<Html lang="en">
+<Head>
+	<meta charset="UFT-8">
+	<Title>Donas</Title>
+	<link rel="stylesheet" href="dise.css">
+	<style type="text/css">
+		lol{ color : Black; font family: Arial; }
+	</style>
+</Head>	
+<Body background="img/Donuts.JPG">
+<table style="width:25%" align="center"  cellpadding="20" bgcolor="white">
+	<form action="donas.php" method="POST"> <!--Aquí van a colocar el archivo al que se va a enviar los datos en la base de datos-->
+	<tr><th colspan="1">DONUTS</th></tr>
+	<tr>
+	<br><br>
+	<lol>
+		<tr><td colspan="2">
+			<label for="Cant">Ingrese la cantidad:</label>
+			<input type="text" maxlength="3" name="cantidad" size="4" id="Cant"></br></br>
+			<label for="adere">Seleccione el sabor:</label>
+			<select name="tipo" id="adere">
+			<option value="Chocolate">Chocolate</option>
+			<option value="Azucar">Az&uacute;car</option>
+			<option value="Surtido">Surtido</option>
+			</select></br></br>
+			RFC:</br><input type="text" name="RFC" id="Reg-rfc" size="25" value="" pattern="^([A-ZÑ&]{3,4}) ?(?:- ?)?(\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])) ?(?:- ?)?([A-Z\d]{2})([A\d])$" required></br></br>
+
+			Nombre de quien recibe:</br><input type="text" name="nom" id="" size="25" minlength="2" maxlength="20" value="" required></br></br>
+
+			Municipio:</br><input type="text" name="mun" id="mun" size="25" value="" required></br></br>
+
+            Calle</br><input type="text" name="calle" id="call" size="25" value="" required></br></br>
+
+			Colonia</br><input type="text" name="col" id="col" size="25" value="" required></br></br>
+
+			N&uacute;mero exterior</br><input type="text" name="num" id="num" size="25" minlength="1" maxlength="10" value="" required></br></br>
+
+			<label for="Num">N&uacute;mero telef&oacute;nico:</label></br>
+			<input type="tel" class="form-input" name="tel" pattern="[0-9]+" minlength="10" maxlength="10" id="Reg-Telefono"required></br></br>
+
+			<label for="entrega">Elija la fecha de entrega que prefiera:</label><br>
+            <input type="date" id="entrega" name="fecha" min="2020-11-19" max="2020-12-31" required><br><br>
+
+	</lol>	
+		<input type="submit" class="btn btn-gold" value="Enviar">  <!-- Aquí van a colocar el nombre de la base de datos-->
+		
+	</form>
+</Body>
+</Html>

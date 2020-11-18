@@ -1,0 +1,96 @@
+<Html lang="en">
+<Head>
+	<meta charset="UFT-8">
+	<Title>Ensaladas</Title>
+	<link rel="stylesheet" href="dise.css">
+	<style type="text/css">
+		lol{ color : BLACK; font family: Arial; }
+	</style>
+</Head>	
+<Body background="img/Ensalada.JPG">
+<table style="width:25%" align="center"  cellpadding="20" bgcolor="white">
+	<form action="  " method="POST"> <!--Aquí van a colocar el archivo al que se va a enviar los datos en la base de datos-->
+	<tr><th colspan="1">ENSALADAS</th></tr>
+	<tr>
+	<br><br>
+	<lol>
+		<tr><td colspan="2">
+		<b><label for="Cant1">Escoja 5 ingredientes</label></br></b>
+			<input type="radio" name="" id="">Pasta</br>
+				<input type="radio" name="" id="">Zanahoria</br>
+					<input type="radio" name="" id="">Pepino</br>
+						<input type="radio" name="" id="">Jícama</br>
+							<input type="radio" name="" id="">Jitomate</br>
+								<input type="radio" name="" id="">Elote</br>
+									<input type="radio" name="" id="">Durazno</br>
+										<input type="radio" name="" id="">Aceituna Negra</br>
+											<input type="radio" name="" id="">Espinaca</br>
+												<input type="radio" name="" id="">Panela</br>
+													<input type="radio" name="" id="">Manchego</br>
+														<input type="radio" name="" id="">Oaxaca</br></br>
+														
+		<b><label for="Cant2">Escoja 2 Proteínas</label></br></b>	
+		<input type="radio" name="" id="">Pollo</br>
+			<input type="radio" name="" id="">Atún</br>
+				<input type="radio" name="" id="">Jamón</br>
+					<input type="radio" name="" id="">Huevo</br></br>
+		
+        <b><label for="Cant3">Escoja 2 Toppings</label></br></b>
+		<input type="radio" name="" id="">Tortilla</br>
+			<input type="radio" name="" id="">Cacahuate</br>
+				<input type="radio" name="" id="">Semilla Girasol</br>
+					<input type="radio" name="" id="">Semilla Girasol Garapiñada</br>
+						<input type="radio" name="" id="">Arándanos</br>
+							<input type="radio" name="" id="">Nuez</br></br>
+		
+		<b><label for="Cant4">Escoja 2 Aderezos</label></br></b>		
+		<input type="radio" name="" id="">Chipotle</br>
+			<input type="radio" name="" id="">Miel-Mostaza</br>
+				<input type="radio" name="" id="">Mil islas</br>
+					<input type="radio" name="" id="">Blue cheese</br>
+						<input type="radio" name="" id="">BBQ</br>
+						    <input type="radio" name="" id="">Ranch</br> 
+							 <input type="radio" name="" id="">Vinagreta</br></br>	
+							
+			<label for=""></label></br>	
+
+			<label for="adere">Tama&ntilde;o:</label>
+			<select name="" id="tam">
+			<option value="1">Peque&ntilde;o</option>
+			<option value="2">Mediano</option>
+			<option value="3">Grande</option>
+			</select></br></br>
+			RFC:</br><input type="text" name="RFC" id="" size="25" value="" required></br></br>
+
+			Nombre de quien recibe:</br><input type="text" name="nom" id="" size="25" minlength="2" maxlength="20" value="" required></br></br>
+
+            Municipio:</br><input type="text" name="municipio" id="mun" size="25" value="" required></br></br>
+
+            Calle</br><input type="text" name="call" id="call" size="25" value="" required></br></br>
+
+			Colonia</br><input type="text" name="colonia" id="col" size="25" value="" required></br></br>
+
+			N&uacute;mero exterior</br><input type="text" name="numero" id="num" size="25" minlength="1" maxlength="10" value="" required></br></br>
+
+			<label for="Num">N&uacute;mero telef&oacute;nico:</label></br>
+			<input type="tel" class="form-input" name="form-telefono" pattern="[0-9]+" minlength="10" maxlength="10" id="Reg-Telefono"required></br></br>
+
+			<label for="entrega">Elija la fecha de entrega que prefiera:</label><br>
+            <input type="date" id="entrega" name="entrega" min="2020-11-12" max="2020-12-31" required><br><br>
+
+							
+			
+		<label for="note">&#191;Desea conservar su contenedor? + $15</label></br>
+		<select name="" id="cont">
+			<option value="Si">S&iacute;</option>
+			<option value="No">No</option>		
+		</select></br></br>
+		
+		<i><b><label for="note">Cada ingrediente adicional tendr&aacute; un costo extra de $10</label></br></br></b></i>	
+															
+	</lol>	
+		<input type="submit" class="btn btn-gold" value="Enviar"> <!-- Aquí van a colocar el nombre de la base de datos-->
+		
+	</form>
+</Body>
+</Html>
